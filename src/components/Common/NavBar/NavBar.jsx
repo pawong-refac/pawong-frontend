@@ -1,6 +1,10 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 
 const NavBar = () => {
+  const location = useLocation();
+  if (location.pathname === "/login") return null;
+
   return (
     <div className="w-full h-12 px-14 absolute bottom-0 flex justify-between items-center bg-white">
       <p>홈</p>

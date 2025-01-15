@@ -7,7 +7,7 @@ export default {
       colors: {
         dark_gray: "var(--dark_gray)",
         gray: "var(--gray)",
-        light_gary: "#e3e3e3",
+        light_gray: "var(--light_gray)",
         pastel_gray: "var(--pastel_gray)",
         light_blue: "var(--light_blue)",
         pastel_blue: "var(--pastel_blue)",
