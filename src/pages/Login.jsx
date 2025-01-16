@@ -11,9 +11,9 @@ const Login = () => {
             <h1 className="text-4xl fontExtraBold">포옹</h1>
             <img src="/assets/Login_img.svg" alt="로그인 메인이미지" />
             <div className="w-full flex flex-row justify-center pb-4">
-                <div>
-                    <p className="text-dark_gray text-sm pr-4 text-right">편하게 둘러보시고</p>
-                    <p className="text-dark_gray text-sm pr-4 text-right">우리 같이 포옹해요!</p>
+                <div className="text-dark_gray text-sm pr-4 text-right">
+                    <p>편하게 둘러보시고</p>
+                    <p>우리 같이 포옹해요!</p>
                 </div>
                 <Link to="/">
                     <button className="rounded-full w-10 h-10 animate-bounce text-sm theme__light_blue shadow-md">
