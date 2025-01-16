@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
   const location = useLocation();
-  if (location.pathname === "/login") return null;
+  if (location.pathname === "/login" || location.pathname === "/admin") return null;
 
   return (
     <div className="w-full h-8 p-4 bg-white flex flex-row justify-between items-center">
