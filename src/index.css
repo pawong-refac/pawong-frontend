@@ -45,7 +45,7 @@
   :root {
     --dark_gray: #6d6e71;
     --gray: #cccccc;
-    --light_gary: #e3e3e3;
+    --light_gray: #e3e3e3;
     --pastel_gray: #f3f3f6;
     --light_blue: #e3ecff;
     --pastel_blue: #5850fe;
@@ -58,7 +58,7 @@
   }
 
   body {
-    @apply flex flex-col items-center;
+    @apply flex flex-col items-center fontRegular;
   }
 
   #root {
@@ -79,5 +79,11 @@
 
   .theme__btn_white {
     @apply bg-white text-dark_gray;
+  }
+}
+
+@layer components {
+  .flex_center {
+    @apply flex justify-center items-center
   }
 }
