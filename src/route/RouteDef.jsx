@@ -1,6 +1,6 @@
 import Home from "../pages/Home";
-import Login from "../pages/Login";
-import LoginAdmin from "../pages/LoginAdmin";
+import Login from "../domains/login/pages/Login";
+import LoginAdmin from "../domains/login/pages/LoginAdmin";
 
 const MainScreens = {
   Home: {
