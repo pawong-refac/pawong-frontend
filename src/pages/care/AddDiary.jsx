@@ -24,6 +24,7 @@ function AddDiary(props) {
     setImages(newImages);
   };
   const handleDeleteImage = (index) => {
+    URL.revokeObjectURL(images[index]);
     const updatedImages = images.filter((_, i) => i !== index);
     setImages(updatedImages);
   };
