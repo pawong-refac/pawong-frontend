@@ -7,7 +7,7 @@ function App() {
   return (
     <div
       id="app"
-      className="flex flex-col justify-center items-center w-full bg-light_gary h-screen"
+      className="flex flex-col items-center w-full h-screen bg-light_gray"
     >
       <Header />
       <AppPages />
