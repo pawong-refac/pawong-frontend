@@ -82,8 +82,27 @@
   }
 }
 
-@layer components {
+@layer components {  
+  .btn__pastel_blue {
+    @apply theme__pastel_blue rounded-2xl shadow-sm hover:shadow-md focus:outline-none
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@layer utilities {
   .flex_center {
     @apply flex justify-center items-center
+  }
+
+  .animate_opacity {
+    animation: fadeIn 0.2s ease-out forwards;
   }
 }
