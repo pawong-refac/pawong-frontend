@@ -3,7 +3,7 @@ import "./App.css";
 import Header from "./components/Common/Header/Header";
 import NavBar from "./components/Common/NavBar/NavBar";
 import AppPages from "./route/AppPages";
-import ScrollToTop from "./layout/ScrollToTop";
+import ScrollToTop from "./hooks/ScrollToTop";
 
 function App() {
   return (

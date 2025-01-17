@@ -9,7 +9,7 @@ const Login = () => {
         <div className="w-full h-screen bg-white px-5 flex flex-col flex_center">
             <p className="pb-4">모든 동물들의 행복을 바라며</p>
             <h1 className="text-4xl fontExtraBold">포옹</h1>
-            <img src="/assets/Login_img.svg" alt="로그인 메인이미지" />
+            <img src="/assets/Login/Login_img.svg" alt="로그인 메인이미지" />
             <div className="w-full flex flex-row justify-center pb-4">
                 <div className="text-dark_gray text-sm pr-4 text-right">
                     <p>편하게 둘러보시고</p>
@@ -29,13 +29,13 @@ const Login = () => {
             <div className="flex flex-row gap-5">
                 <LoginSocialBtn
                     to="/"
-                    src="/assets/Logo_google.svg"
+                    src="/assets/Login/Logo_google.svg"
                     alt="구글 로고 이미지"
                     bgColor="bg-white"
                 />
                 <LoginSocialBtn
                     to="/"
-                    src="/assets/Logo_naver.svg"
+                    src="/assets/Login/Logo_naver.svg"
                     alt="네이버버 로고 이미지"
                     bgColor="bg-[#03C75A]"
                 />
