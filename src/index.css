@@ -108,6 +108,6 @@
   }
 
   .content_container {
-    @apply p-5 bg-white;
+    @apply p-5 mb-3 bg-white;
   }
 }

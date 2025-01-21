@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import profile from "/assets/Care/dog-default-img.svg";
+import profile from "/assets/Diary/dog-default-img.svg";
 
-//TODO input 컴포넌트화 하기
-
-function AddDiary(props) {
+//TODO input 컴포넌트화 하기 (image / form)
+//TODO 버튼 컴포넌트 수정하기
+function AddDiary() {
   const [formData, setFormData] = useState({
     tag: "",
     title: "",
