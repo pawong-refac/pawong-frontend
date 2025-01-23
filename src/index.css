@@ -98,7 +98,7 @@
     @apply w-56 m-5 text-xl text-white bg-pastel_blue hover:bg-pastel_gray hover:text-pastel_blue h-14 rounded-2xl;
   }
   .cancelBtn {
-    @apply w-56 m-5 text-xl text-pastel_blue bg-pastel_gray hover:bg-pastel_blue hover:text-pastel_gray h-14 rounded-2xl;
+    @apply w-56 m-5 text-xl text-pastel_blue bg-light_blue hover:bg-pastel_gray hover:text-pastel_blue h-14 rounded-2xl;
   }
 }
 
@@ -108,6 +108,6 @@
   }
 
   .content_container {
-    @apply p-5 mb-3 bg-white;
+    @apply px-5 mb-4 bg-white py-7;
   }
 }

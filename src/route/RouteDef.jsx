@@ -3,6 +3,7 @@ import Login from "../domains/Login/pages/Login";
 import LoginAdmin from "../domains/Login/pages/LoginAdmin";
 import AddDiary from "../domains/Diary/pages/AddDiary";
 import DetailDiary from "../domains/Diary/pages/DetailDiary";
+import ListDiary from "../domains/Diary/pages/ListDiary";
 
 const MainScreens = {
   Home: {
@@ -24,6 +25,10 @@ const MainScreens = {
   DetailDiary: {
     path: "/detail-diary",
     element: <DetailDiary />,
+  },
+  DiaryList: {
+    path: "/list-diary",
+    element: <ListDiary />,
   },
 };
 
