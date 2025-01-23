@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaw } from "@fortawesome/free-solid-svg-icons";
-import LoginModal from "../components/LoginModal";
+import LoginAdminModal from "../components/LoginAdminModal";
 
 const LoginAdmin = () => {
     const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
@@ -26,7 +26,7 @@ const LoginAdmin = () => {
                     <FontAwesomeIcon icon={faPaw} />
                 </button>
             </div>
-            {isLoginModalOpen && <LoginModal onClose={closeLoginModal} />}
+            {isLoginModalOpen && <LoginAdminModal onClose={closeLoginModal} />}
         </>
     );
 };
