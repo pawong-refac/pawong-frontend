@@ -47,10 +47,9 @@
     --gray: #cccccc;
     --light_gray: #e3e3e3;
     --pastel_gray: #f3f3f6;
+    --white_gray : #f5f5f5;
     --light_blue: #e3ecff;
     --pastel_blue: #5850fe;
-    --black: #000000;
-    --white: #ffffff;
   }
 
   * {
@@ -73,18 +72,30 @@
     @apply bg-pastel_blue text-white;
   }
 
-  .theme__btn_outline {
-    @apply border-pastel_blue bg-white text-pastel_blue;
-  }
-
-  .theme__btn_white {
+  .theme__white {
     @apply bg-white text-dark_gray;
   }
 }
 
-@layer components {  
+@layer components {
+  .btn__outline {
+    @apply border-pastel_blue border rounded-xl bg-white text-pastel_blue;
+  }
+
   .btn__pastel_blue {
-    @apply theme__pastel_blue rounded-2xl shadow-sm hover:shadow-md focus:outline-none
+    @apply fontBold theme__pastel_blue rounded-2xl shadow-sm hover:shadow-md focus:outline-none
+  }
+
+  .btn__light_blue {
+    @apply fontBold theme__light_blue rounded-2xl shadow-sm hover:btn__pastel_blue focus:outline-none
+  }
+
+  .btn__white_gray {
+    @apply fontBold bg-white_gray text-pastel_blue rounded-2xl shadow-white_gray focus:outline-none
+  }
+
+  .input__underline {
+    @apply w-full pt-1 border-dark_gray border-b cursor-pointer placeholder:text-gray focus:outline-pastel_blue
   }
 }
 
