@@ -75,7 +75,7 @@ function AddDiary() {
 
   return (
     <div className="bg_container">
-      <div className="content_container">
+      <div className="content_container rounded-2xl">
         <form onSubmit={handleSubmit}>
           <ImgUpload
             images={images}
