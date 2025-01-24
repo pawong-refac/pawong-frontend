@@ -104,7 +104,7 @@
 
 @layer components {
   .bg_container {
-    @apply w-full p-5 bg-light_gray;
+    @apply w-full h-full p-5 bg-light_gray;
   }
 
   .content_container {
