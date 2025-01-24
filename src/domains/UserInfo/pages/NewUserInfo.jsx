@@ -23,7 +23,6 @@ const NewUserInfo = () => {
                         <Input
                             label="닉네임"
                             type="text"
-                            name="nickname"
                             {...register("nickname", {
                                 required: "닉네임을 입력해주세요.",
                                 maxLength: {
@@ -46,7 +45,6 @@ const NewUserInfo = () => {
                     <Input
                         label="생년월일"
                         type="date"
-                        name="birth"
                         placeholder="날짜를 선택해주세요."
                         {...register("birth", {
                             required: "생년월일을 입력해주세요.",

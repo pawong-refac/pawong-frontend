@@ -22,7 +22,6 @@ const NewUserInfoImg = ({ register, setValue }) => {
         <>
             <Input
                 type="file"
-                name="profileImg"
                 accept="image/*"
                 className="hidden"
                 {...register("profileImg")}
