@@ -1,9 +1,9 @@
 import React from "react";
-import Carousel from "../components/Home/Carousel";
-import Menu from "../components/Home/Menu";
-import Tip from "../components/Home/Tip";
-import CareListThumbNail from "../components/Home/CareListThumbNail";
-import TipThumnNail from "../components/Home/TipThumnNail";
+import Carousel from "../components/Carousel";
+import Menu from "../components/Menu";
+import Tip from "../components/Tip";
+import CareListThumbNail from "../components/CareListThumbNail";
+import TipThumnNail from "../components/TipThumnNail";
 
 const Home = () => {
   return (

@@ -1,4 +1,4 @@
-import Home from "../pages/Home";
+import Home from "../domains/Home/pages/Home";
 
 const MainScreens = {
   Home: {
