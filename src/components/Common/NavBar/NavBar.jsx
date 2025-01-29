@@ -1,8 +1,13 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 
 const NavBar = () => {
+  const location = useLocation();
+  if (location.pathname === "/login" || location.pathname === "/admin")
+    return null;
+
   return (
-    <div className="w-full h-12 px-14 absolute bottom-0 flex justify-between items-center bg-white text-xs">
+    <div className="w-full h-12 px-14 fixed bottom-0 z-auto flex justify-between items-center bg-white text-xs">
       <div className="flex flex-col justify-center items-center gap-0.5">
         <img
           src="/assets/NavBar/Home.svg"
