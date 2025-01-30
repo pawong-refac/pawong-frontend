@@ -12,9 +12,9 @@ const TipThumnNail = () => {
             return (
               <div
                 key={index}
-                className="flex flex-row justify-start items-center w-full py-2.5 gap-3 border-b border-light_gary"
+                className="flex flex-row justify-start items-center w-full py-2.5 gap-3 border-b border-pastel_gray"
               >
-                <div className="flex flex-col justify-center items-center w-5 h-5 rounded-md  bg-light_blue text-pastel_blue">
+                <div className="flex flex-col justify-center items-center w-5 h-5 rounded-md bg-light_blue text-pastel_blue">
                   {index + 1}
                 </div>
                 <div className="text-dark_gray">{title}</div>
@@ -23,8 +23,8 @@ const TipThumnNail = () => {
           }
         )}
       </div>
-      <div className="flex flex-col justify-center items-center w-28 h-5 fontRegular bg-pastel_gray text-pastel_blue text-xs">
-        포옹 소식 모아보기
+      <div className="w-full flex flex-row justify-end items-center">
+        <img src="/assets/Home/NoticeDog.svg" alt="notice dog" />
       </div>
     </div>
   );

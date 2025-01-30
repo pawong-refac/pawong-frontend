@@ -14,6 +14,9 @@ export default {
         black: "var(--black)",
         white: "var(--white)",
       },
+      width: {
+        "600px": "600px",
+      },
     },
   },
   plugins: [],

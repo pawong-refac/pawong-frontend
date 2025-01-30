@@ -17,7 +17,7 @@ const CareListThumbNail = () => {
           return (
             <div
               key={tag + index}
-              className="flex flex-row justify-start items-center w-full py-2.5 gap-3 border-b border-light_gary"
+              className="flex flex-row justify-start items-center w-full py-2.5 gap-3 border-b border-pastel_gray"
             >
               <div className="flex flex-col justify-center items-center w-16 py-1.5 rounded-xl  bg-light_blue text-pastel_blue">
                 {tag}

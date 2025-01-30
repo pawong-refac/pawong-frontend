@@ -45,7 +45,7 @@
   :root {
     --dark_gray: #6d6e71;
     --gray: #cccccc;
-    --light_gray: #e3e3e3;
+    --light_gray: #b3b3b3;
     --pastel_gray: #f3f3f6;
     --light_blue: #e3ecff;
     --pastel_blue: #5850fe;
@@ -84,6 +84,6 @@
 
 @layer components {
   .flex_center {
-    @apply flex justify-center items-center
+    @apply flex justify-center items-center;
   }
 }

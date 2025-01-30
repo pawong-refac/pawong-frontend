@@ -4,6 +4,7 @@ import Menu from "../components/Menu";
 import Tip from "../components/Tip";
 import CareListThumbNail from "../components/CareListThumbNail";
 import TipThumnNail from "../components/TipThumnNail";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -28,6 +29,7 @@ const Home = () => {
           alt="Advertisement"
         />
         <TipThumnNail />
+        <Footer />
       </div>
     </div>
   );
