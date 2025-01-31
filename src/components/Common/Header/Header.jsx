@@ -3,13 +3,20 @@ import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
   const location = useLocation();
-  if (location.pathname === "/login" || location.pathname === "/loginAdmin") return null;
+  if (location.pathname === "/login" || location.pathname === "/loginAdmin")
+    return null;
 
   return (
-    <div className="max-w-[37.5rem] w-full h-8 p-4 bg-white flex flex-row justify-between items-center">
-      <p>logo</p>
+    <div className="max-w-[600px] max-w-[37.5rem] w-full h-14 p-3 bg-white fixed top-0 z-50 flex justify-between items-center">
+      <Link to="/">
+        <p className="fontExtraBold text-2xl">포옹</p>
+      </Link>
       <Link to="/login">
-        <p>login</p>
+        <img
+          src="/assets/Header/login_none.svg"
+          alt="login_none"
+          className="w-6 h-6"
+        />
       </Link>
     </div>
   );
