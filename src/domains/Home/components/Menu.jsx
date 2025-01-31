@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Menu = () => {
   return (
@@ -27,14 +28,16 @@ const Menu = () => {
         />
         <p>즐겨찾기</p>
       </div>
-      <div className="w-28 flex flex-col justify-center items-center">
-        <img
-          className="w-20 h-20 object-cover"
-          src="/assets/Home/Menu/Notice.svg"
-          alt="Notice"
-        />
-        <p>공지사항</p>
-      </div>
+      <Link to="/notice">
+        <div className="w-28 flex flex-col justify-center items-center">
+          <img
+            className="w-20 h-20 object-cover"
+            src="/assets/Home/Menu/Notice.svg"
+            alt="Notice"
+          />
+          <p>공지사항</p>
+        </div>
+      </Link>
     </div>
   );
 };

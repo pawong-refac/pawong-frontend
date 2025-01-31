@@ -14,7 +14,7 @@ function App() {
       >
         <ScrollToTop />
         <Header />
-        <div id="pages" className="py-14">
+        <div id="pages" className="py-14 w-full h-full">
           <AppPages />
         </div>
         <NavBar />

@@ -1,6 +1,7 @@
 import Home from "../domains/Home/pages/Home";
 import Login from "../domains/Login/pages/Login";
 import LoginAdmin from "../domains/Login/pages/LoginAdmin";
+import Notice from "../domains/Menu/pages/Notice";
 
 const MainScreens = {
   Home: {
@@ -14,6 +15,10 @@ const MainScreens = {
   LoginAdmin: {
     path: "/admin",
     element: <LoginAdmin />,
+  },
+  Notice: {
+    path: "/notice",
+    element: <Notice />,
   },
 };
 
