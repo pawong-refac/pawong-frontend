@@ -8,15 +8,14 @@ import ScrollToTop from "./hooks/ScrollToTop";
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
+      <Header />
       <div
-        id="app"
-        className="flex flex-col justify-center items-center w-full bg-light_gray h-screen"
+        className="flex flex-col items-center w-full h-screen bg-light_gray"
       >
-        <ScrollToTop />
-        <Header />
         <AppPages />
-        <NavBar />
       </div>
+      <NavBar />
     </BrowserRouter>
   );
 }
