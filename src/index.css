@@ -48,12 +48,13 @@
     --light_gray: #b3b3b3;
     --pastel_gray: #f3f3f6;
     --white_gray: #f5f5f5;
+    --white_gray: #f5f5f5;
     --light_blue: #e3ecff;
     --pastel_blue: #5850fe;
   }
 
   * {
-    @apply m-0 p-0 box-border;
+    @apply box-border p-0 m-0;
   }
 
   body {
@@ -61,7 +62,7 @@
   }
 
   #root {
-    @apply max-w-screen-sm w-full relative min-h-screen h-full m-0 px-5 py-0;
+    @apply relative w-full h-full max-w-screen-sm min-h-screen px-5 py-0 m-0;
   }
 
   .theme__light_blue {
@@ -69,7 +70,7 @@
   }
 
   .theme__pastel_blue {
-    @apply bg-pastel_blue text-white;
+    @apply text-white bg-pastel_blue;
   }
 
   .theme__white {
@@ -110,10 +111,33 @@
 
 @layer utilities {
   .flex_center {
-    @apply flex justify-center items-center;
+    @apply flex items-center justify-center;
   }
-
   .animate_opacity {
     animation: fadeIn 0.2s ease-out forwards;
+  }
+}
+
+@layer components {
+  .inputFiled {
+    @apply w-full p-3 mb-4 border rounded-lg cursor-pointer h-11 border-gray placeholder-gray focus:outline-none focus:ring-1 ring-pastel_blue focus:border-pastel_blue;
+  }
+}
+@layer components {
+  .submitBtn {
+    @apply w-56 m-5 text-xl text-white bg-pastel_blue hover:bg-pastel_gray hover:text-pastel_blue h-14 rounded-2xl;
+  }
+  .cancelBtn {
+    @apply w-56 m-5 text-xl text-pastel_blue bg-light_blue hover:bg-pastel_gray hover:text-pastel_blue h-14 rounded-2xl;
+  }
+}
+
+@layer components {
+  .bg_container {
+    @apply w-full h-full p-5 bg-light_gray;
+  }
+
+  .content_container {
+    @apply px-5 mb-4 bg-white py-7;
   }
 }
