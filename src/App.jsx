@@ -14,7 +14,7 @@ function App() {
         id="app"
         className="flex flex-col justify-center items-center max-w-[600px] w-full bg-pastel_gray h-full"
       >
-        <div id="pages" className="py-14">
+        <div id="pages" className="w-full py-14">
           <AppPages />
         </div>
       </div>
