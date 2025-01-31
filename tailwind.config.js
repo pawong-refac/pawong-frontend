@@ -13,6 +13,9 @@ export default {
         light_blue: "var(--light_blue)",
         pastel_blue: "var(--pastel_blue)",
       },
+      width: {
+        "600px": "600px",
+      },
     },
   },
   plugins: [],

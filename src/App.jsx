@@ -11,9 +11,12 @@ function App() {
       <ScrollToTop />
       <Header />
       <div
-        className="flex flex-col items-center w-full h-screen bg-light_gray"
+        id="app"
+        className="flex flex-col justify-center items-center max-w-[600px] w-full bg-pastel_gray h-full"
       >
-        <AppPages />
+        <div id="pages" className="py-14 w-full h-full">
+          <AppPages />
+        </div>
       </div>
       <NavBar />
     </BrowserRouter>

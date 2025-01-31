@@ -1,7 +1,8 @@
-import Home from "../pages/Home";
+import Home from "../domains/Home/pages/Home";
 import Login from "../domains/Login/pages/Login";
 import LoginAdmin from "../domains/Admin/pages/LoginAdmin";
 import NewUserInfo from "../domains/UserInfo/pages/NewUserInfo";
+import Notice from "../domains/Menu/pages/Notice";
 
 const MainScreens = {
   Home: {
@@ -10,16 +11,20 @@ const MainScreens = {
   },
   Login: {
     path: "/login",
-    element: <Login />
+    element: <Login />,
   },
   LoginAdmin: {
     path: "/loginAdmin",
-    element: <LoginAdmin />
+    element: <LoginAdmin />,
+  },
+  Notice: {
+    path: "/notice",
+    element: <Notice />,
   },
   NewUserForm: {
     path: "/userInfo/new",
-    element: <NewUserInfo />
-  }
+    element: <NewUserInfo />,
+  },
 };
 
 export const AppRouteDef = {
