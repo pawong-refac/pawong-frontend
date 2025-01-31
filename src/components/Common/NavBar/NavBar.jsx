@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 
 const NavBar = () => {
   const location = useLocation();
-  if (location.pathname === "/login" || location.pathname === "/admin")
+  if (location.pathname === "/login" || location.pathname === "/loginAdmin")
     return null;
 
   return (

@@ -3,11 +3,11 @@ import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
   const location = useLocation();
-  if (location.pathname === "/login" || location.pathname === "/admin")
+  if (location.pathname === "/login" || location.pathname === "/loginAdmin")
     return null;
 
   return (
-    <div className="max-w-[600px] w-full h-14 p-3 bg-white fixed top-0 z-50 flex justify-between items-center">
+    <div className="max-w-[600px] max-w-[37.5rem] w-full h-14 p-3 bg-white fixed top-0 z-50 flex justify-between items-center">
       <Link to="/">
         <p className="fontExtraBold text-2xl">포옹</p>
       </Link>
