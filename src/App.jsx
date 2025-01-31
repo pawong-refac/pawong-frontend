@@ -19,7 +19,7 @@ function App() {
         <div
           id="pages"
           className={
-            location.pathname === ("/login" || "/loginAdmin")
+            ["/login", "/loginAdmin"].includes(location.pathname)
               ? "w-full"
               : "w-full py-14"
           }
